@@ -1,0 +1,218 @@
+@font-face { font-family: ubuntu; src: url(fonts/Ubuntu-Title.ttf) } 
+
+body {
+    font-family: ubuntu;
+    margin: 0px;
+    height: 100vh;
+    width:100vh;
+    background-color: #D2F9C8;
+}
+.top-row{
+    background-color: #D2F9C8;
+}
+
+.bottom-row {
+    background-color: #D2F9C8;
+}
+
+.container {
+    background-color: #D2F9C8;
+    display: grid;
+    grid-template-rows: 10vh 10vh 60vh 20vh;
+
+}
+.quotebox {
+    background-color: #D2F9C8;
+}
+header h1 {
+    color: #449B43;
+    font-size: 48px;
+}
+
+#branding {
+    margin-left: 30px;
+    float:left;
+}
+
+#time {
+    float:right;
+    margin-right: 30px;
+}
+
+#quote {
+    text-align: center;
+    color: #449B43;
+    font-size: 36px;
+}
+
+
+.hero {
+    background-color: #D2F9C8;
+}
+
+.frog-bg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 20vw 38vw 17vw 17vw 1vw;
+    grid-column-gap:3vh;
+}
+
+.music-container {
+    background-color: #449B43;
+    border-radius: 15px;
+    display:flex; 
+    
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3vh;
+    margin-left: 4vh;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+    z-index:1; 
+}
+
+.action-btn {
+    color: #DFFFDE;
+    background-color: #449B43;
+    border:0; 
+    cursor:pointer;
+    padding:10px;
+    margin:0 20px;
+    font-size: 24px;
+}
+
+.action-btn-big {
+    font-size: 30px;
+}
+
+.action-btn:focus {
+    outline: 0; 
+}
+
+.music-info {
+    position: absolute;
+    top:0; 
+    width: 100%; 
+    transform: translateY(-100%);
+    font-size: 24px;
+    color: #449B43;
+}
+
+.music-info > h4 {
+    color: #449B43; 
+}
+
+.progress-container {
+    background-color: #DFFFDE;
+    border-radius: 5px;
+    cursor:pointer; 
+    margin:10px 0; 
+    height:10px;
+    width:100%;
+}
+
+.progress {
+    background-color: #449B43;
+    border-radius: 5px;
+    height: 100%;
+    width:0;
+    transform: width 0.1s linear;
+}
+
+.btn {
+    background-color: #449B43;
+    color: #DFFFDE; 
+    padding: 22px 50px;
+    border-radius: 15px;
+    border:0; 
+    font-family: ubuntu;
+    font-size: 32px;
+    
+    cursor:pointer; 
+    width: 100%;
+
+}
+
+.btn:focus {
+    outline: 0; 
+}
+
+#pom-btn {
+    margin-top: 8vh;
+}
+
+#mov-btn {
+    margin-top: 8vh;
+}
+
+#pom-timer {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 17vw; /* Full width (cover the whole page) */
+    height: 43%; /* Full height (cover the whole page) */
+    top: 40vh;
+    left: 79.8vw;
+    border-radius: 15px;
+    background-color: #DFFFDE; /* Black background with opacity */
+    z-index: 2; 
+    cursor:pointer; 
+    transition: .5s ease;
+}
+
+#exit {
+    color: #449B43; 
+    font-size: 20px;
+    float:left;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    cursor:pointer; 
+}
+
+.pom-btn {
+    padding-top: 10px;
+    text-align: center;
+    color: #449B43; 
+    font-size: 52px;
+}
+
+#pom-timer > h4, h1 {
+    padding-top: 15px;
+    color: #449B43; 
+    text-align: center;
+    line-height: 10px;
+}
+
+#pom-timer > h1 {
+    font-size: 50px ;
+}
+
+#break-btn, #study-btn{
+    font-size: 21px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #449B43; 
+    width:80%;
+    color: #DFFFDE;
+    font-family: ubuntu;
+    cursor: pointer;
+    padding:10px;
+    border: 0;
+    margin-top: 15px;
+    transform: translateX(12%);
+}
+
+.btn:focus {
+    outline: 0; 
+}
+

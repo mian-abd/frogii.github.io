@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Frogii ♫ </title>
+</head>
+<style>
+    @font-face { font-family: ubuntu; src: url(/fonts/Ubuntu-Title.ttf) } 
+</style>
+<body onload="startTime()">
+    <wrapper>
+        <div class="container">
+            <header class="top-row">
+                <div>
+                <h1 id="branding">Frogii</h1>
+                </div>
+                <nav>
+                    <h1 id= "time"></h1>
+                </nav>
+                
+            </header>
+            <section class="quotebox">
+                <div>
+                    <h1 id= "quote"></h1>
+                </div>
+            </section>
+            <section class= "hero">
+                
+                <div>
+                    <img src= img/restfrog.png class="frog-bg">
+                </div>
+            </section>
+
+            <section class= bottom-row>
+            <div class="mus-box">
+                <div class="music-container">
+                    <div class="music-info">
+                        <h4 id= "title"> ♫ Comfy vibes</h4>
+                        <div class= "progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                    <audio src="audio/Foreverland.mp3" id="audio"></audio> <!--Add in audio later-->
+
+                    <div class= "navigation">
+                        <button id="prev" class="action-btn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play" class="action-btn action-btn-big">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next" class="action-btn">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filler">
+            </div>
+
+            <div class="mov-container">
+                <button onclick= "loadQuote()" class= "btn" id= "mov-btn">motivation!</button>
+            </div>
+
+            <div class="pom-container">
+                <button onclick= "on()" class= "btn" id= "pom-btn">pomodoro</button>
+            </div>
+            <div></div>
+            </section>
+            <div id= pom-timer>
+                <i id= "exit" class="fas fa-times" onclick="closePomTimer()"></i>
+                <h4 id="phrase">Time for Work!</h4>
+                <h1 id= "countdown">25:00</h1>
+                <div class= "pom-btn">
+                    <i id= "pom-play" class="fas fa-play-circle" onclick="playcountdown()"></i>
+                    <i id= "pom-pause" class="fas fa-pause-circle" onclick= "pausecountdown()"></i>
+                </div>
+                <button id= study-btn onclick= playStudy()>Study!</button>
+                <button id= break-btn onclick= playBreak()>break!</button>
+            </div>
+        </div>
+    </wrapper>
+    <script src="script.js"></script>
+</body>
+</html>
