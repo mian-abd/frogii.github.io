@@ -123,7 +123,13 @@ const quotes= [
     "i believe that you can do it!", 
     "I hope that you had a wonderful day!", 
     "life goes on , so keep going!",
-    "you can do it!"
+    "you can do it!",
+    "Success is forged in the fire of defeat",
+    "Hard work matters",
+    "Stay consistent!",
+    "Don’t give in",
+    "Go get it!",
+    "Today’s studying plants the seeds for tomorrow’s success",
 ]
 
 function loadQuote(){
